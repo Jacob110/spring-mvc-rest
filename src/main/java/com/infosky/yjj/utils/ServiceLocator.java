@@ -4,6 +4,11 @@ import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.BeanFactoryAware;
 
+/**
+ * 通过实现 BeanFactoryAware 
+ *  获取 XML 定义的Bean实例
+ **/
+
 public class ServiceLocator implements BeanFactoryAware {
 
 	private static BeanFactory beanFactory = null;

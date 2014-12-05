@@ -4,6 +4,11 @@ import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 
+/**
+ * 通过实现 ApplicationContextAware 来获取 上下文
+ * 返回ApplicationContext 来获取 XML 定义的Bean实例
+ **/
+
 public final class ApplicationContextHolder implements ApplicationContextAware {
 
 	public ApplicationContextHolder() {
@@ -18,7 +23,6 @@ public final class ApplicationContextHolder implements ApplicationContextAware {
 			try {
 				throw new Exception("Application Context has been setted.");
 			} catch (Exception e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
