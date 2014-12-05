@@ -19,7 +19,7 @@ public class UserService {
     List<UserInfo> userInfos = null;
 
     public UserService() {
-        //init();
+        init();
     }
 
     private void init() {
